@@ -7,8 +7,7 @@
  *  type ：请求方式 get/post
  *  url：请求地址
  *  data：携带的数据，要求是 键=值&键=值 形式
- *  callback：请求成功的回调函数
- *    接收一个参数，这个参数是一个返回的结果，是一个字符串
+ *  callback：请求成功的回调函数,接收一个参数，这个参数是一个返回的结果，是一个字符串
  * }
 */
 
@@ -21,7 +20,6 @@ function ajax(options) {
 		console.log('回调函数没有给');
 		console.log(res);
 	}
-
 	let xhr = new XMLHttpRequest();
 	// 如果是get请求，把数据拼接在url的后面
 	if (options.type === 'get') {
@@ -43,5 +41,4 @@ function ajax(options) {
 			}
 		}
 	}
-
 }
